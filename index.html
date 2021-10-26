@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+
+    <title>PreEntrega tres</title>
+    
+</head>
+<body>
+
+    <div id="aside">
+        <button id="btnCarrito"></button>
+        <div id="cantidadCarrito">0</div>
+        <button id="btnFiltro"></button>
+        
+    </div>
+    <div id="carrito">
+        <button id="cerrarCarrito"></button>
+        <div id="productosCarrito">
+
+        </div>
+    </div>
+    <div id="filtro">
+        <button id="cerrarFiltro"></button>
+        <p>Filtrar por categoria</p>
+        <select id="filtroCat">
+
+        </select>
+        <br>
+        <br>
+        <p>Filtrar por rango de precio</p>
+        <input class="inputPrecio" id="minPrecio" type="number" value="1">
+        <input class="inputPrecio" id="maxPrecio" type="number" value="1000">
+    </div>
+
+
+    <div id="header">
+        <p id="cargando">CARGANDO...</p>
+        <input id="busqueda" type="text" placeholder="Buscar por nombre">
+    </div>
+
+    
+    
+    <div id="contenedor__productos">
+
+    </div>
+    <div id="anuncioCuotas">
+
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="producto.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

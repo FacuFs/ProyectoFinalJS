@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("img/BG5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    display: none;
+}
+
+#cargando{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: whitesmoke;
+}
+
+#contenedor__productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 70px;
+
+}.productos{
+    display: inline-block;
+    padding: 20px;
+    height: 13em;
+    width: 13em;
+    text-align: center;
+    line-height: 15px;
+    margin : 4px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    margin-bottom: 10px;
+
+}
+
+.productos h2{
+    font-size: 1em;
+    margin-top: 0;
+    color: whitesmoke;
+}
+
+.productos h4{
+    font-size: small;
+    margin-bottom: 15px;
+    color: whitesmoke;
+}
+
+
+.productos button{
+    position: relative;
+    background-color: rgb(65, 65, 65);
+    border:solid 1px;
+    border-radius: 5px;
+    height: 2em;
+    width: 5em;
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+.imgProductos{
+    width: 40%;
+    margin-top: 10px;
+    position: relative;
+    border: solid;
+    border-radius: 10px;
+}
+
+#header{
+    height:1px;
+}
+
+#aside{
+    height: 100vh;
+    width: 60px;
+    margin: 0;
+    background-color: rgb(221, 221, 221);
+    position: fixed;
+    display:inline-block;
+    left: 0;
+}
+#btnCarrito{
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    background-image: url("img/carro.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+#btnCarrito:hover{
+    cursor: pointer;
+}
+
+#btnFiltro{
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    background-image: url("img/filtro.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+#btnFiltro:hover{
+    cursor: pointer;
+}
+
+#filtro{
+    height: 100vh;
+    width: 300px;
+    margin: 0;
+    position: fixed;
+    left: 60px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    background: rgba(19, 25, 31, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: whitesmoke;
+}
+
+#cerrarFiltro{
+    position: absolute;
+    left: 265px;
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    background-image: url("img/cerrarCarrito.png");
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    z-index: 10;
+    border-radius: 50px;
+    border: solid whitesmoke 1px;
+}
+
+#filtroCat{
+    margin: 20px 0;
+    background-color: transparent;
+    color: whitesmoke;
+    border-radius: 5px;
+    width: 40%;
+    height: 5%;
+    font-weight: bold;
+    text-align-last: center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.inputPrecio{
+    margin: 20px 0;
+    background-color: transparent;
+    color: whitesmoke;
+    border-radius: 5px;
+    width: 40%;
+    height: 5%;
+    border: solid 1px;
+    font-weight: bold;
+    text-align-last: center;
+    
+
+}
+
+
+
+option{
+    background-color: rgb(104, 104, 104);
+    font-weight: bold;
+    border-radius: 5px;
+    text-align-last: center;
+
+}
+
+#cerrarCarrito{
+    position: absolute;
+    left: 265px;
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    background-image: url("img/cerrarCarrito.png");
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    z-index: 10;
+    border-radius: 50px;
+    border: solid whitesmoke 1px;
+}
+
+#cerrarCarrito:hover{
+    cursor: pointer;
+}
+
+#carrito{
+    height: 100vh;
+    width: 300px;
+    margin: 0;
+    position: fixed;
+    left: 60px;
+    z-index: 10;
+    display: none;
+    background: rgba(19, 25, 31, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: whitesmoke;
+}
+#cantidadCarrito{
+    text-align: center;
+}
+
+.productosCarrito__individuales{
+    border-radius: 5px;
+    margin: 5px;
+    padding: 0;
+
+    color: rgb(221, 220, 220);
+
+    background: rgba( 255, 255, 255, 0.2 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 5px;
+
+}
+.productosCarrito__individuales button{
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnAgregar{
+    height: 20px;
+    width: 35px;
+    background-color: rgb(67, 228, 67);
+}
+.btnSubstraer{
+    height: 20px;
+    width: 35px;
+    background-color: rgb(228, 217, 67);
+}
+.btnBorrar{
+    height: 20px;
+    width: 50px;
+    background-color: rgb(232, 52, 52);
+}
+
+#busqueda{
+    position: absolute;
+    margin-top: 10px;
+    left: 100px;
+    height: 30px;
+    border: solid 1px whitesmoke;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
